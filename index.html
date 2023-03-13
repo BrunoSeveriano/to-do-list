@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+  
+     <!-- Fonts-->
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+
+    <!--Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css" />
+
+   
+  </head>
+  <body onload="getList();">
+    
+    <div class="todo-container">
+      <!-- Titulo-->
+      <header>
+        <h1>My to do list</h1>
+      </header>
+
+      <!-- Formulário-->
+      <form id="todo-form">
+        <p>Adicione sua tarefa</p>
+        
+        <div class="form-control">
+          <input type="text" id="todo-input" placeholder="Digite sua tarefa" />
+          <button id="create-btn" type="submit">
+            <i class="ri-add-line"></i>
+          </button>
+        </div>
+      </form>
+
+      <!--Editor do Formulario-->
+      <form id="edit-form"  class="hide">
+        <p>Edite sua tarefa</p>
+        <div class=" form-control">
+          <input type="text" id="edit-input"/>
+          <button type="submit">
+            <i class="ri-check-line"></i>
+          </button>
+        </div>        
+        <button id="cancel-btn">Cancelar</button>         
+      </form>         
+
+      <div id="todo-list">       
+        
+      </div>
+
+    </div>    
+
+   
+    
+    <!-- JavaScript-->
+    <script src="script.js"></script>
+    
+  </body>
+</html>
